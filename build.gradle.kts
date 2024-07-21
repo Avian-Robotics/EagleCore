@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.23"
     id("edu.wpi.first.GradleRIO") version "2024.3.2"
+    `maven-publish`
 }
 
 group = "com.avianroboticscms"
