@@ -32,3 +32,15 @@ tasks.test {
 kotlin {
     jvmToolchain(17)
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+
+            groupId = group.toString()
+            artifactId = "EagleCore"
+            version = "1.0-SNAPSHOT"
+        }
+    }
+}
